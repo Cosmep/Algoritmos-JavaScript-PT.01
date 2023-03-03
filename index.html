@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmos</title>
+    <link rel="stylesheet" href="../algoritmos/css/style.css">
+
+</head>
+<body>
+<!--Algoritmos para calcular Tiempo, Velocidad y distancia.-->
+    <div class ="vtd" id="vtd" > 
+         <h2>Algoritmos para calcular Tiempo, Velocidad y distancia</h2>
+        <div id="vtd1" class="item"> 
+            <h3>Calcular la distancia recorrida </br>por un vehiculo
+               que </br>mantenía movimiento constante</h3>  
+            <div class="calculator"> 
+                <input type="text" id="velocity" placeholder="Velocidad">
+                <input type="text"  id="time" placeholder="Tiempo">
+                <button class ="btn" onclick="calculateDistance()">Calcular</button>              
+                <p>La distancia recorrida es: <span id="distance"></span></p>
+            </div>
+        </div> 
+        
+        <div id="vtd2" class="item"> 
+            <h3>Calcular el tiempo transcurrido </br>por un vehiculo
+                que mantenía movimiento constante </br>desplazandose a un lugar.</h3>
+            <div class="calculator">
+                <input type="text" id="velocity2" placeholder="Velocidad">
+                <input type="text"  id="distance2" placeholder="Distancia">
+                <button class ="btn" onclick="calculateTime()">Calcular</button>       
+                <p>El tiempo transcurrido es: <span id="time2"></span></p>
+            </div>
+        </div>
+
+        <div id="vtd3" class="item">
+            <h3>validar si dentro de una lista de palabras existe algún palíndromo. </br> recorrida un vehiculo
+                que mantenía movimiento constante </br> a cierta distancia a través del tiempo.</h3>
+            <div class="calculator">
+                <input type="text" id="distance3" placeholder="Distancia">
+                <input type="text"  id="time3" placeholder="Tiempo">
+                <button class ="btn" onclick="calculateVelocity()">Calcular</button>       
+                <p>La velocidad es: <span id="velocity3"></span></p>
+            </div>
+        </div>
+
+    </div>
+
+</br>
+
+    <div class="container" id="container">
+        <h1>Buscador de Palindromos</h1>
+        <input type="text" class="searchBox" id="searchBox" placeholder="Escriba la palabra">
+        <button id="searchButton" class="searchButton" >Buscador</button>
+  
+       
+      </div> 
+      </br>
+      <div class="container" id="container">
+        <div id="results"></div>
+      </div> 
+
+</div>
+
+     <script src="../algoritmos/js/main.js"></script>
+</body>
+</html>
